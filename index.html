@@ -36,8 +36,93 @@
         <section class="Menu" id="Menu">
             <p>Some recipes from our</p>
             <h2>Menu</h2>
-            <div class="popap">
-                <div class="popap_content"></div>
+            <div class="carousel">
+                <div class="carousel-content">
+                    <div class="meal-page">
+                        <img src="images/sesame.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        <h3>Sesame Noodles</h3>
+                        <p>Smooth peanut butter creates a swoon-worthy, creamy sauce. Pass the chili
+                            crisp at the table if you like a little extra spice.</p>
+                    </div>
+                    <div class="meal-page">
+                        <img src="images/spring_soup.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        <h3>Gingery Spring Soup</h3>
+                        <p>Get double the plant-based protein with shelled edamame and silken tofu (the best kind for soaking up all that savory broth).</p>
+                    </div>
+                    <div class="meal-page">
+                        <img src="images/tomato_salad.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        <h3>Tomato and Pepper Salad</h3>
+                        <p>Grilling season doesn't have to be all burgers and dogs. Throw some peppers and scallions on the fire to add smoky flavor to this potluck-ready salad.</p>
+                    </div>
+                    <div class="meal-page">
+                        <img src="images/tahini.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        <h3>Green Tahini Dip</h3>
+                        <p>Full of bright, punchy herbs like basil and parsley, this makes a mean dip for veggies or sliced baguette.</p>
+                    </div>
+                    <div class="meal-page">
+                        <img src="images/truffle.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                        <h3>Vegan Chocolate Truffles</h3>
+                        <p>This is a three-ingredient vegan dessert anyone can make. Plus, they're a great food gift!</p>
+                    </div>
+                </div>
+                <div class="carousel-navigation">
+                    <div class="carousel-button" id="carousel-left"></div>
+                    <div class="carousel-button" id="carousel-right"></div>
+                </div>
+            </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="slides">
+                    <img src="images/SN.png" style="width:30%">
+                  </div>
+              
+                  <div class="slides">
+                    <img src="images/GSS.png" style="width:30%">
+                  </div>
+              
+                  <div class="slides">
+                    <img src="images/TPS.png" style="width:30%">
+                  </div>
+              
+                  <div class="slides">
+                    <img src="images/GTD.png" style="width:30%">
+                  </div>
+                  <div class="slides">
+                    <img src="images/VCT.png" style="width:30%">
+                  </div>
+              
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  <div class="carousel-content">
+                    <img class="demo" src="images/SN.png" onclick="currentSlide(1)" alt="Sesame Noodles">
+                  </div>
+              
+                  <div class="carousel-content">
+                    <img class="demo" src="images/GSS.png" onclick="currentSlide(2)" alt="Gingery Spring Soup">
+                  </div>
+              
+                  <div class="carousel-content">
+                    <img class="demo" src="images/TPS.png" onclick="currentSlide(3)" alt="Tomato and Pepper Salad">
+                  </div>
+              
+                  <div class="carousel-content">
+                    <img class="demo" src="images/GTD.png" onclick="currentSlide(4)" alt="Green Tahini Dip">
+                  </div>
+
+                  <div class="carousel-content">
+                    <img class="demo" src="images/VCT.png" onclick="currentSlide(5)" alt="Vegan Chocolate Truffles">
+                  </div>
+                </div>
+              </div>
+                
 
             </div>
         </section>
@@ -95,23 +180,43 @@
 
 
         </section>
-        <section class="Connect" ic="Connect">
+        <footer id="Contacts">
             <h3>Let`s connect</h3>
-            <div class="social">
-                <img src="images/fc.png" alt="faceboook_icon">
-                <p>vegloveanimal.com</p>
-                <img src="images/inst.png" alt="inst_icon">
-                <p>@vegloveanimal</p>
-                <img src="images/tg.png" alt="telegram_icon">
-                <p>@veg_loveanimal</p>
+            <div class="col-left-social">
+                <ul>
+                    <li>
+                        <img src="images/fc.png" alt="vegloveanimal.com">
+                        <span>vegloveanimal.com</span>
+                    </li>
+                    <li>
+                        <img src="images/inst.png" alt="@vegloveanimal">
+                        <span>@vegloveanimal</span>
+                    </li>
+                    <li>
+                        <img src="images/tg.png" alt="@veg_loveanimal">
+                        <span>@veg_loveanimal</span>
+                    </li>
+
+                </ul>
             </div>
-            <div class="telephone_email">
-                <img src="images/ph.png" alt="phone_icon">
-                <p>+xx - xxx xx xxx</p>
-                <img src="images/em.png" alt="email_icon">
-                <p>@vegloveanimal@gmail.com</p>
+            <div class="col-right-contacts">
+                <ul>
+                    <li>
+                        <a href="tel:+xx - xxx xx xxx">
+                            <img src="images/ph.png" alt="+xx - xxx xx xxx">
+                            <span>+xx - xxx xx xxx</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:vegloveanimal@gmail.com">
+                            <img src="images/em.png" alt="vegloveanimal@gmail.com">
+                            <span>vegloveanimal@gmail.com</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </footer>
+
     </div>
 </body>
 </html>
