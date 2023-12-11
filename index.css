@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #E7DECD;
+  font-family: 'Krona One', sans-serif;
+}
+ul, ol, li, a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+p, h1, h2, h3, h4, a{
+  margin: 0;
+}
+.wrapper {
+  margin: 40px 60px;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger {
+  display: none;
+}
+@media (max-width: 930px) {
+  .wrapper {
+    margin: 40px 30px;
+  }
+  .text__block {
+    font-size: 50px;
+  }
+  .content > img {
+    width: 550px !important;
+  }
+  .benefits_simple > h3,
+  .benefits_participants > h3 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 720px) {
+  .text__block {
+    font-size: 30px;
+  }
+  .content > img {
+    width: 450px !important;
+  }
+}
+@media (max-width: 350px) {
+  .text__block {
+    font-size: 30px;
+  }
+  .content > img {
+    width: 450px !important;
+  }
+}
+@media (max-width: 1030px) {
+  .main-nav {
+    display: none;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+  }
+  .burger > span {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(101, 104, 57, 1);
+  }
+  .main__text-future {
+    position: relative;
+    bottom: 120px;
+  }
+  .start_button {
+    position: relative;
+    top: 165px !important;
+  }
+  .start_button > p {
+    top: 20px !important;
+  }
+  .content > img {
+    width: 650px;
+  }
+}
+nav > ul {
+  display: flex;
+  gap: 60px;
+}
+
+nav > ul > li > a{ 
+  color: rgba(101, 104, 57, 1);
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+}
+
+.text__block {
+  color: #5BBA63;
+  font-size: 100px;
+  position: relative;
+  margin-top: 65px;
+  opacity: .7;
+  text-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: difference;
+}
+.text__block::before {
+  content: "VEGETARIANISM";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  color: #6e176e;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.content > aside {
+  width: 50%;
+  position: relative;
+}
+.main__text-future > p:first-child {
+  color: #210F04;
+  font-size: 80px;
+  position: absolute;
+  top: 0px;
+  width: 300px;
+}
+.main__text-future > p:first-child::before {
+  content: "is the";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #210F04;
+  mix-blend-mode: difference;
+}
+
+.main__text-future > p:last-child {
+  color: #153B50;
+  font-size: 100px;
+  position: absolute;
+  top: 90px;
+  text-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: difference;
+}
+.main__text-future > p:last-child::before {
+  content: "future";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  color: #cdad7e;
+}
+@media (max-width: 1350px) {
+  .text__block {
+    font-size: 70px;
+  }
+  .main__text-future > p:first-child {
+    font-size: 50px;
+  }
+  .main__text-future > p:last-child {
+    font-size: 70px;
+  }
+  .start_button > button {
+    top: -100px !important;
+  }
+  .start_button > p{
+    font-size: 50px !important;
+  }
+  .content > img {
+    width: 650px;
+  }
+}
+.start_button {
+  position: relative;
+  top: 270px;
+}
+.start_button > button {
+  position: relative;
+  border: none;
+  border-radius: 80px;
+  color: #E7DECD;
+  font-family: 'Krona One', sans-serif;
+  background: #656839;
+  box-shadow: 5px 4px 4px 0px #5BBA63;
+  padding: 21px 52px;
+  font-size: 50px;
+}
+.start_button > button::before {
+  content:'start';
+  color: #E7DECD;
+  font-family: 'Krona One', sans-serif;
+  position: absolute;
+  top: 21px;
+  left: 56px;
+  opacity: .5;
+}
+.start_button > p{
+  color: #210F04;
+  font-size: 80px;
+  position: absolute;
+  top: 130px;
+}
+.start_button > p::before {
+  content: "marathon";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  color: #210F04;
+  mix-blend-mode: difference;
+}
+
+.content > img {
+  position: relative;
+  top: -83px;
+}
+
+.Menu {
+  padding: 140px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 762px;
+}
+.menu__carousel {
+  margin: 0 80px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__text {
+  width: 50%;
+}
+@media (max-width: 1350px) {
+  .menu__recipe {
+    font-size: 35px !important;
+  }
+  .menu__header {
+    font-size: 80px !important;
+  }
+}
+@media (max-width: 1090px) {
+  .menu__carousel {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .carousel {
+    top: 170px !important;
+  }
+  .meal-page {
+    top: 85px !important;
+  }
+  .Menu {
+    height: 1164px;
+  }
+}
+.menu__recipe {
+  color: #210F04;
+  font-size: 50px;
+}
+.menu__header {
+  color: #153B50;
+  font-size: 100px;
+  position: absolute;
+  top: 130px;
+  text-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: difference;
+}
+.menu__header::before {
+  content: "Menu";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  color: #cdad7e;
+}
+.carousel {
+  position: relative;
+  top: -60px;
+}
+@media (max-width: 720px) {
+  .carousel-content {
+    width: 450px !important;
+    height: 450px !important;
+  }
+  .carousel-content > img:nth-child(2) {
+    width: 350px;
+    height: 350px;
+  }
+  .carousel-content > img:nth-child(1),
+  .carousel-content > img:nth-child(3) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.carousel-content {
+  background-color: #656839;
+  border-radius: 50%;
+  width: 650px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 20px;
+}
+.meal-page {
+  padding: 100px 80px;
+  background-color: #656839;
+  position: relative;
+  top: -200px;
+  z-index: -3;
+}
+.meal-page > h3 {
+  color: #5BBA63;
+  font-size: 40px;
+}
+.meal-page > p {
+  color: #E7DECD;
+  font-size: 25px;
+}
+@media (max-width: 1350px) {
+  .Benefits {
+    flex-direction: column;
+  }
+  .benefits_participants, .benefits_simple {
+    width: 100% !important;
+  }
+}
+.Benefits {
+  display: flex;
+  justify-content: space-around;
+  background-color: #656839;
+  gap: 35px;
+  padding: 0px 80px 60px;
+}
+.benefits_participants {
+  width: 50%;
+}
+.benefits_simple {
+  width: 42%;
+}
+.benefit__text,
+.vegan__text,
+.benefit__text-participants,
+.vegan__text-participants{
+  position: relative;
+  color: #E7DECD;
+  font-family: 'Krona One', sans-serif;
+  text-shadow: 5px 4px 4px 0px #5BBA63;
+  letter-spacing: 4px;
+  font-size: 40px;
+}
+.benefit__text:before,
+.vegan__text:before,
+.benefit__text-participants:before,
+.vegan__text-participants:before {
+  color: #E7DECD;
+  font-family: 'Krona One', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  opacity: .5;
+}
+.benefit__text:before {
+  content:'Benefits';
+}
+.vegan__text:before {
+  content:'of vegetarianism';
+}
+.benefit__text-participants:before {
+  content:'Benefits noticed by';
+}
+.vegan__text-participants:before {
+  content:'marathon participants';
+}
+
+.benefits_list {
+  margin-top: 50px;
+  border-radius: 100px;
+  opacity: 0.8;
+  background: #E7DECD;
+  padding: 30px 110px;
+}
+
+.benefits_list > ol > li {
+  color: #153B50;
+  list-style: decimal;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.benefits_list > ol > li > p,
+.benefits_list > ol > li > ul > li {
+  color: #153B50;
+  list-style: disc;
+  font-size: 15px;
+  position: relative;
+  left: -35px;
+}
+.benefits_list > ol > li > ul {
+  padding-left: 18px;
+}
+
+.ben__cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.ben {
+  padding: 30px;
+  width: 310px;
+  height: 235px;
+  border-radius: 50px;
+  background: rgba(91, 186, 99, 0.80);
+}
+.ben > h4 {
+  color: #210F04;
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+.ben > p {
+  color: #210F04;
+  font-size: 15px;
+}
+
+#Contacts {
+  padding: 40px 0px 70px;
+  background-color: #210F04;
+}
+#Contacts > h3 {
+  text-align: center;
+  color: #E7DECD;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.contacts__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social > ul {
+  display: flex;
+  flex-direction: column;
+}
+.social > ul > li {
+  margin-bottom: 30px;
+}
+.social > ul > li,
+.social > ul > li > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 720px) {
+  .contacts__block {
+    flex-direction: column;
+  }
+  .social > ul > li{
+    align-self: center;
+  }
+}

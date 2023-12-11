@@ -6,13 +6,12 @@
     <meta name="description" content="Explore the world of vegetarianism with our diverse menu. 
     Discover the benefits of a plant-based lifestyle and connect with us. 
     Your journey to a healthier future starts here."/>
-
+    <link rel="stylesheet" href="./index.css">
 
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header id="header">
+        <header class="wrapper" id="header">
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
             </div>
@@ -24,201 +23,134 @@
                     <li><a href="#Contacts">Contacts</a></li>
                 </ul>
             </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </header>
-        <section id="Main">
+        <section class="wrapper" id="Main">
+            <h1 class="text__block">VEGETARIANISM</h1>
             <div class="content">
-                <h1>VEGETARIANISM</h1>
-                <p>is the future</p>
-                <div class="MainImg">
-                    <img src="images/mainm.png" alt="MaimImg">
-                </div>
-                <div class="start_button">
-                    <button>start</button>
-                    <p>marathon</p>
-                </div>
+                <aside>
+                    <div class="main__text-future">
+                        <p>is the</p>
+                        <p>future</p>
+                    </div>
+                    <div class="start_button">
+                        <button>start</button>
+                        <p>marathon</p>
+                    </div>
+                </aside>
+                <img src="images/mainm.png" alt="MaimImg">
             </div>
         </section>
         <section class="Menu" id="Menu">
-            <p>Some recipes from our</p>
-            <h2>Menu</h2>
-            <div class="carousel">
-                <div class="carousel-content">
-                    <div class="meal-page">
-                        <img src="images/sesame.png" alt="sesame plate" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                        <h3>Sesame Noodles</h3>
-                        <p>Smooth peanut butter creates a swoon-worthy, creamy sauce. Pass the chili
-                            crisp at the table if you like a little extra spice.</p>
-                    </div>
-                    <div class="meal-page">
-                        <img src="images/spring_soup.png" alt="spring_soup plate"  onclick="openModal();currentSlide(2)" class="hover-shadow">
-                        <h3>Gingery Spring Soup</h3>
-                        <p>Get double the plant-based protein with shelled edamame and silken tofu (the best kind for soaking up all that savory broth).</p>
-                    </div>
-                    <div class="meal-page">
-                        <img src="images/tomato_salad.png" alt="tomato_salad plate" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                        <h3>Tomato and Pepper Salad</h3>
-                        <p>Grilling season doesn't have to be all burgers and dogs. Throw some peppers and scallions on the fire to add smoky flavor to this potluck-ready salad.</p>
-                    </div>
-                    <div class="meal-page">
-                        <img src="images/tahini.png" alt="tahini plate" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                        <h3>Green Tahini Dip</h3>
-                        <p>Full of bright, punchy herbs like basil and parsley, this makes a mean dip for veggies or sliced baguette.</p>
-                    </div>
-                    <div class="meal-page">
-                        <img src="images/truffle.png" alt="truffle plate" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                        <h3>Vegan Chocolate Truffles</h3>
-                        <p>This is a three-ingredient vegan dessert anyone can make. Plus, they're a great food gift!</p>
-                    </div>
+            <div class="menu__carousel">
+                <div class="menu__text">
+                    <p class="menu__recipe">Some recipes <br>from our</p>
+                    <h2 class="menu__header">Menu</h2>
                 </div>
-                <div class="carousel-navigation">
-                    <div class="carousel-button" id="carousel-left"></div>
-                    <div class="carousel-button" id="carousel-right"></div>
+                <div class="carousel">
+                    <div class="carousel-content">
+                        <img src="images/left-arrow.png" alt="sesame plate" class="hover-shadow">
+                        <img src="images/sesame.png" alt="sesame plate" class="hover-shadow">
+                        <img src="images/right-arrow.png" alt="sesame plate" class="hover-shadow">
+                    </div>
                 </div>
             </div>
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-              
-                  <div class="slides">
-                    <img src="images/SN.png" alt="sesame" style="width:30%">
-                  </div>
-              
-                  <div class="slides">
-                    <img src="images/GSS.png" alt="spring_soup" style="width:30%">
-                  </div>
-              
-                  <div class="slides">
-                    <img src="images/TPS.png" alt="tomato_salad" style="width:30%">
-                  </div>
-              
-                  <div class="slides">
-                    <img src="images/GTD.png" alt="tahini" style="width:30%">
-                  </div>
-                  <div class="slides">
-                    <img src="images/VCT.png" alt="truffle" style="width:30%">
-                  </div>
-              
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-                  
-                  <div class="caption-container">
-                    <p id="caption"></p>
-                  </div>
-              
-                  <div class="carousel-content">
-                    <img class="demo" src="images/SN.png" onclick="currentSlide(1)" alt="Sesame Noodles">
-                  </div>
-              
-                  <div class="carousel-content">
-                    <img class="demo" src="images/GSS.png" onclick="currentSlide(2)" alt="Gingery Spring Soup">
-                  </div>
-              
-                  <div class="carousel-content">
-                    <img class="demo" src="images/TPS.png" onclick="currentSlide(3)" alt="Tomato and Pepper Salad">
-                  </div>
-              
-                  <div class="carousel-content">
-                    <img class="demo" src="images/GTD.png" onclick="currentSlide(4)" alt="Green Tahini Dip">
-                  </div>
-
-                  <div class="carousel-content">
-                    <img class="demo" src="images/VCT.png" onclick="currentSlide(5)" alt="Vegan Chocolate Truffles">
-                  </div>
-                </div>
-              </div>
+            <div class="meal-page">
+                <h3>Sesame Noodles</h3>
+                <p>Smooth peanut butter creates a swoon-worthy, creamy sauce. Pass the chili crisp at the table if you like a little extra spice.</p>
+            </div>
         </section>
 
         <section class="Benefits" id="Benefits">
             <div class="benefits_simple">
-                <h3>Benefits of vegetarianism</h3>
+                <h3 class="benefit__text">Benefits</h3>
+                <h3 class="vegan__text">of vegetarianism</h3>
                 <div class="benefits_list">
-                    <ul style="list-style-type: decimal;">
+                    <ol>
                         <li>
                             <h4>Boost Heart Health</h4>
                             <p>A vegetarian diet has been shown to help boost your heart health in a number of different ways.</p>
                             <ul>
-                                <li>
-                                Lower blood pressure
-                                </li>
-                                <li>
-                                Reduce risk of heart disease 
-                                </li>
-                                <li>
-                                Lower cholesterol
-                                </li>
+                                <li>Lower blood pressure</li>
+                                <li>Reduce risk of heart disease</li>
+                                <li>Lower cholesterol</li>
                             </ul>
                         </li>
                         <li>
-                            <h4> Help the Environment</h4>
+                            <h4>Help the Environment</h4>
                             <p>Eating a vegetarian diet can also benefit the environment. Animals emit greenhouse gases, resulting in a larger carbon footprint than vegetables or grains. In fact, a meat-based diet increases carbon emissions 2.5 times more than a plant-based diet. These greenhouse gases contribute to global warming and climate changes around the world.</p>
                         </li>
                         <li>
                             <h4> Prevent Cancer</h4>
                             <p>Eating a vegetarian diet could also help you reduce your risk of developing cancer. Plants contain phytochemicals that may help protect your cells from damage. They are also high in nutrients, vitamins, and minerals, helping individuals remain healthier.</p>
                         </li>
-                    </ul> 
+                    </ol> 
                 </div>
             </div>
             <div class="benefits_participants">
-                <h3>Benefits noticed by marathon participants</h3>
-                <div class="1_ben">
-                    <h4>Prevent Type 2 Diabetes</h4>
-                    <p>A vegetarian diet may also help you avoid Type 2 diabetes. Sticking to a vegetarian diet was associated with a 35% to 53% lower risk of developing diabetes.</p>
-                </div>
-                <div class="2_ben">
-                    <h4>Manage Weight</h4>
-                    <p>Plant-based diets can help you manage your weight, too. While this lifestyle choice doesn’t inherently cause weight loss, it can help you cut down on fatty tissues.</p>
-                </div>
-                <div class="3_ben">
-                    <h4>Keep Your Brain Sharp</h4>
-                    <p>Plant-based foods can help keep your brain healthy. Consuming more plant-based foods could be linked to lower rates of dementia and Alzheimer’s.</p>
-                </div>
-                <div class="4_ben">
-                    <h4>Reduce Risk of Illness</h4>
-                    <p>Have you ever had food poisoning? Not fun. While eating vegetarian doesn’t completely eliminate your risk of food-borne illness</p>
-                </div>
+                <h3 class="benefit__text-participants">Benefits noticed by</h3>
+                <h3 class="vegan__text-participants">marathon participants</h3>
+                <aside class="ben__cards">
+                    <div class="ben 1_ben">
+                        <h4>Prevent Type 2 Diabetes</h4>
+                        <p>A vegetarian diet may also help you avoid Type 2 diabetes. Sticking to a vegetarian diet was associated with a 35% to 53% lower risk of developing diabetes.</p>
+                    </div>
+                    <div class="ben 2_ben">
+                        <h4>Manage Weight</h4>
+                        <p>Plant-based diets can help you manage your weight, too. While this lifestyle choice doesn’t inherently cause weight loss, it can help you cut down on fatty tissues.</p>
+                    </div>
+                    <div class="ben 3_ben">
+                        <h4>Keep Your Brain Sharp</h4>
+                        <p>Plant-based foods can help keep your brain healthy. Consuming more plant-based foods could be linked to lower rates of dementia and Alzheimer’s.</p>
+                    </div>
+                    <div class="ben 4_ben">
+                        <h4>Reduce Risk of Illness</h4>
+                        <p>Have you ever had food poisoning? Not fun. While eating vegetarian doesn’t completely eliminate your risk of food-borne illness</p>
+                    </div>
+                </aside>
             </div>
-
-
         </section>
         <footer id="Contacts">
             <h3>Let`s connect</h3>
-            <div class="col-left-social">
-                <ul>
-                    <li>
-                        <img src="images/fc.png" alt="vegloveanimal.com">
-                        <span>vegloveanimal.com</span>
-                    </li>
-                    <li>
-                        <img src="images/inst.png" alt="@vegloveanimal">
-                        <span>@vegloveanimal</span>
-                    </li>
-                    <li>
-                        <img src="images/tg.png" alt="@veg_loveanimal">
-                        <span>@veg_loveanimal</span>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-right-contacts">
-                <ul>
-                    <li>
-                        <a href="tel:+xx(xxx)xx-xxx">
-                            <img src="images/ph.png" alt="+xx - xxx xx xxx">
-                            <span>+xx - xxx xx xxx</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:vegloveanimal@gmail.com">
-                            <img src="images/em.png" alt="vegloveanimal@gmail.com">
-                            <span>vegloveanimal@gmail.com</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="contacts__block">
+                <div class="social col-left-social">
+                    <ul>
+                        <li>
+                            <img src="images/fc.png" alt="vegloveanimal.com">
+                            <span>vegloveanimal.com</span>
+                        </li>
+                        <li>
+                            <img src="images/inst.png" alt="@vegloveanimal">
+                            <span>@vegloveanimal</span>
+                        </li>
+                        <li>
+                            <img src="images/tg.png" alt="@veg_loveanimal">
+                            <span>@veg_loveanimal</span>
+                        </li>
+    
+                    </ul>
+                </div>
+                <div class="social col-right-contacts">
+                    <ul>
+                        <li>
+                            <a href="tel:+xx(xxx)xx-xxx">
+                                <img src="images/ph.png" alt="+xx - xxx xx xxx">
+                                <span>+xx - xxx xx xxx</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vegloveanimal@gmail.com">
+                                <img src="images/em.png" alt="vegloveanimal@gmail.com">
+                                <span>vegloveanimal@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </footer>
-
-    </div>
 </body>
 </html>
